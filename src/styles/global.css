@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply bg-background text-foreground;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    h1 {
+        font-family: "HK Grotesk", sans-serif;
+        @apply text-[32px] font-bold md:text-[56px];
+    }
+
+    h2 {
+        font-family: "HK Grotesk", sans-serif;
+        @apply text-[28px] font-bold md:text-[40px];
+    }
+
+    section {
+        @apply py-16;
+    }
+
+}
+
+@layer components {
+    .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: 320px) {
+        .container {
+            max-width: 280px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            max-width: 688px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .container {
+            max-width: 1140px;
+        }
+    }
+
+    /* Track your health section */
+    .swiper-button-disabled {
+        @apply text-[#b3bac5] !border-[#b3bac5];
+    }
+
+    .swiper-slide-active {
+        @apply  !rounded-[22px] overflow-hidden;
+    }
+
+    /* Contact form section */
+    .contact {
+        @apply xl: pr-28;
+    }
+
+    .contact_wrapper {
+        @apply grid md: mx-auto md:w-3/5 xl:w-full xl:grid-cols-2;
+    }
+
+    .contact_wrapper .gform_heading {
+        @apply mb-6 capitalize xl: pr-56;
+    }
+
+    .contact_wrapper .name_first {
+        @apply  !p-0;
+    }
+
+    .contact_wrapper input {
+        @apply rounded-lg border border-solid border-[#959EAD];
+    }
+
+    .contact_wrapper input[type="submit"] {
+        @apply border-none bg-primary py-3 px-6 font-bold text-white;
+    }
+}
