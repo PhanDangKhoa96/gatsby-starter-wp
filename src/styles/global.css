@@ -50,15 +50,6 @@
         }
     }
 
-    /* Track your health section */
-    .swiper-button-disabled {
-        @apply text-[#b3bac5] !border-[#b3bac5];
-    }
-
-    .swiper-slide-active {
-        @apply  !rounded-[22px] overflow-hidden;
-    }
-
     /* Contact form section */
     .contact {
         @apply xl: pr-28;
@@ -83,4 +74,17 @@
     .contact_wrapper input[type="submit"] {
         @apply border-none bg-primary py-3 px-6 font-bold text-white;
     }
+
+}
+/* Track your health section */
+.swiper-button-disabled {
+    @apply text-[#b3bac5] !border-[#b3bac5];
+}
+
+.swiper-slide-active {
+    @apply !rounded-[22px] overflow-hidden;
+}
+
+.swiper-slide {
+    @apply !w-[180px] !aspect-[180/400] md:!w-[calc((100%-30px*3)/3)] md:!aspect-auto md:!h-[400px] xl:!h-[520px];
 }

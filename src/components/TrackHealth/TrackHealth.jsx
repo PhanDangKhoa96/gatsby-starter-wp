@@ -51,7 +51,7 @@ const TrackHealth = ({ data: { title, description, content } }) => {
 
                                 {content.map((item, index) => {
                                     return (
-                                        <SwiperSlide class="swiper-slide asdcdf !w-[180px] !aspect-[180/400] md:!w-[calc((100%-30px*3)/3)] md:!aspect-auto md:!h-[400px] xl:!h-[520px]" key={index}>
+                                        <SwiperSlide key={index}>
                                             <img src={item.image?.sourceUrl || 'https://phocode.com/wp-content/uploads/2020/10/placeholder-1-1.png'} alt="" class="w-full h-full object-cover" />
                                         </SwiperSlide>
                                     )
