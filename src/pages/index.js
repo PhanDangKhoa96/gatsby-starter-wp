@@ -15,6 +15,7 @@ const Home = ({ data: { wpPage } }) => {
     const protect = blocks.find(block => Object.keys(block)[0] === 'protect')
     const clinics = blocks.find(block => Object.keys(block)[0] === 'clinics')
     const trackHealth = blocks.find(block => Object.keys(block)[0] === 'trackHealth')
+
     return (
         <div>
             <HeroBanner data={heroBanner.heroBanner} />

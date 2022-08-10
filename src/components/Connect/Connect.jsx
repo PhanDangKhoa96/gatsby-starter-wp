@@ -2,7 +2,7 @@ import { isEmpty } from 'lodash';
 import React from 'react'
 
 const Connect = ({ data: { title, description, tableDetail, sites, card, tableDetailTitle } }) => {
-    console.log(tableDetail, 'tableDetail');
+
     return (
         <section className="container lg:px-16">
             <div className="flex text-center gap-y-7 gap-x-5 flex-col mb-6 md:text-left md:pr-48 xl:pr-0 xl:items-center xl:flex-row">

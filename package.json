@@ -37,6 +37,7 @@
     "gatsby-react-router-scroll": "^5.20.0",
     "gatsby-script": "^1.5.0",
     "gatsby-source-filesystem": "^4.0.0",
+    "gatsby-source-gravityforms": "^1.0.18",
     "gatsby-source-wordpress": "^6.0.0",
     "gatsby-transformer-sharp": "^4.0.0",
     "html-react-parser": "^1.1.1",
