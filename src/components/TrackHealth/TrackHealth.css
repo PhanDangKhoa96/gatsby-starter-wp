@@ -1,3 +1,0 @@
-.swiper-slide {
-    @apply w-[180px] aspect-[180/400] md: w-[calc((100%-30px*3)/3)] md:aspect-auto md:h-[400px] xl:h-[520px];
-}
